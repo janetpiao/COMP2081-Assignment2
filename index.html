@@ -14,7 +14,7 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div>
+    <div class="container">
       <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
           <a href="#" class="navbar-brand">
@@ -54,11 +54,238 @@
           <!-- .collapse div -->
         </nav>
       </header>
-      <main></main>
+      <main>
+        <section class="intro">
+          <figure>
+            <img
+              src="img/bookcover.png"
+              alt="book cover of Is a River Alive?"
+            />
+          </figure>
+          <article>
+            <h1>Is a River Alive?</h1>
+            <p>Author <strong>Robert Macfarlane</strong></p>
+            <p>
+              From the celebrated writer, observer and naturalist Robert
+              Macfarlane comes a brilliant, perspective-shifting new book, which
+              answers a resounding "yes" to the question of its title.At the
+              heart of Is a River Alive? is a single, transformative idea: that
+              rivers are not mere matter for human use, but living beings, who
+              should be recognized as such in both imagination and law.
+              Macfarlane takes the reader on a mind-expanding global journey
+              into the history, futures, people and places of the ancient,
+              urgent concept.Around the world, rivers are dying from pollution,
+              drought and damming. But a powerful movement is also underway to
+              recognize the lives and the rights of rivers, and to re-animate
+              our relationships with these vast, mysterious presences whose
+              landscapes we share. The young "rights of nature" movement has lit
+              up activists, artists, law-makers and politicians across six
+              continents—and become the focus for revolutionary thinking about
+              rivers in particular.The book flows like water, from the mountains
+              to the sea, over three major journeys. The first is to northern
+              Ecuador, where a miraculous cloud-forest and its rivers are
+              threatened with destruction by Canadian gold-mining. The second is
+              to...<strong>Read More</strong>
+            </p>
+          </article>
+        </section>
+        <section class="author">
+          <figure>
+            <img src="img/author.png" alt="author" />
+          </figure>
+          <article>
+            <h2>About Author</h2>
+            <p>
+              Robert Macfarlane is the bestselling author of an award-winning trilogy of books about landscape and the human heart: Mountains of the Mind, The Wild Places, and The Old Ways. He is also the author of Landmarks and Holloway. His work has been translated into a dozen languages and is published in more than 20 countries, and his books have been widely adapted for TV, film, and radio by the BBC, among others. Macfarlane has contributed to Harper’s Magazine, Granta, The Observer (London), the Times Literary Supplement (London), and the London Review of Books. He was made a Fellow of the Royal Society of Literature in 2012, and is currently a Fellow in English of Emmanuel College, Cambridge.
+        </section>
+        <!-- Accordian for book details, reviews, newsletter and more books by author -->
+        <div class="accordion" id="accordionid">
+          <section class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+              >
+                Book Details
+              </button>
+            </h2>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordion1"
+            >
+              <div class="accordion-body">
+                <nav class="tab">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Format</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-language-tab" data-bs-toggle="pill" data-bs-target="#pills-language" type="button" role="tab" aria-controls="pills-language" aria-selected="false">Language</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-publisher-tab" data-bs-toggle="pill" data-bs-target="#pills-publisher" type="button" role="tab" aria-controls="pills-publisher" aria-selected="false">Publisher</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-categories-tab" data-bs-toggle="pill" data-bs-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories" aria-selected="false">Categories</button>
+                    </li>
+                  </ul>
+                  <!-- tab content -->
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">384 pages, Hardcover</div>
+                    <div class="tab-pane fade" id="pills-language" role="tabpanel" aria-labelledby="pills-language-tab" tabindex="0">English</div>
+                    <div class="tab-pane fade" id="pills-publisher" role="tabpanel" aria-labelledby="pills-publisher-tab" tabindex="0">Random House Canada</div>
+                    <div class="tab-pane fade" id="pills-categories" role="tabpanel" aria-labelledby="pills-categories-tab" tabindex="0">Science & Technology | Non-Fiction</div>
+                  </div> <!-- div-class="tab content" -->
+                </nav>
+              </div> <!-- div-class="accordion-body" -->
+            </div> <!-- div #collapse1 -->
+          </section>
+          <section class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+              >
+                Reviews
+              </button>
+            </h2>
+          <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordion2"
+            >
+              <div class="accordion-body">
+                <p>
+                  “I have some fairly minor criticism of this book, but I’m really thankful for getting to spend time with it. It’s wonderful to get to see someone experience the world, literature, and thinking through our lives as he does through these stories. And in the ongoing saga of climate change, I think the perspective about considering the earth is as important as considering us humans - I think it’s more grounded, but also so much more beautiful.” ---June 27, 2025
+                </p>
+                <p>
+                  “I can safely say that Robert Macfarlane is indeed, still my favorite author.How do I review this? His books truly are a journey: in this case, a journey of rivers. He takes the reader through the loud, living, fungi-filled cloud forests of Equador, through the polluted marshlands, rivers and turtle-lined coast of eastern India all the way to the crystal-smooth to roiling white waters of Northeastern Canada/Innu territory.” ---June 2, 2025
+                </p>
+                <p>
+                  “This was so good. The first book of this author I've read. I tend to prefer women writing about nature, and had a perception that he may have been quite 'England' focused, however, this book is like 3 short books together covering 3 journeys to destinations where he is enquiring into and observing how the Rights of Nature are being dealt with.” ---  November 21, 2025
+                </p>
+              </div> <!-- div-class="accordion-body" -->
+            </div> <!-- div #collapse2 -->
+          </section>
+          <section class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+              >
+                Newsletter
+              </button>
+            </h2>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordion3"
+            >
+              <div class="accordion-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="inputEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="example@email.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div> <!-- div-class="accordion-body" -->
+            </div> <!-- div #collapse3 -->
+          </section>
+          <section class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+              >
+                More Books by Author
+              </button>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordion4"
+            >
+              <div class="accordion-body">
+                <div
+                  id="carouselBooks"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <figure class="carousel-item active">
+                      <img src="img/Landmarks.png" class="d-block w-100" alt="Landmarks" />
+                    </figure>
+                    <figure class="carousel-item">
+                      <img src="img/TheGiftsOfReading.png" class="d-block w-100" alt="The Gifts Of Reading" />
+                    </figure>
+                    <figure class="carousel-item">
+                      <img src="img/Underland.png" class="d-block w-100" alt="Underland" />
+                    </figure>
+                  </div> <!-- .carousel-inner -->
+                  <!-- left arrow -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBooks"
+                    data-bs-slide="prev"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-arrow-left-circle"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <!-- right arrow -->
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBooks"
+                    data-bs-slide="next"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-circle"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div> <!-- div-class="accordion-body" -->
+            </div> <!-- div #collapse4 -->
+          </section>
+      </main>
       <footer>
         <p>
           <small>
-            © 2025 Jingyao Piao. All rights reserved
+            © 2025 Jingyao Piao.
             <a href="https://github.com/janetpiao">My Github Profile</a>.</small
           >
         </p>
