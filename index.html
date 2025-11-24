@@ -16,11 +16,43 @@
   <body>
     <div>
       <header>
-        <nav
-          class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
-        >
-    <a href="#" class="navbar-brand">
-				<img src="img/logo.svg" alt="logo" width="232" height="20" class="d-inline-block align-top"/></nav>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <a href="#" class="navbar-brand">
+            <img
+              src="img/logo.svg"
+              alt="logo"
+              width="232"
+              height="20"
+              class="d-inline-block align-top ms-4"
+          /></a>
+          <button
+            class="navbar-toggler me-1"
+            data-bs-target="#navbar"
+            data-bs-toggle="collapse"
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <!-- ms: margin start -> margin-left// me: margin end // me-lg-4: margin end 4rem for large screen  -->
+            <ul class="navbar-nav ms-4 ms-lg-auto me-lg-4">
+              <li class="nav-item"><a href="#" class="nav-link">Books</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Bestsellers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Coming Soon</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">New Releases</a>
+              </li>
+            </ul>
+          </div>
+          <!-- .collapse div -->
+        </nav>
       </header>
       <main></main>
       <footer>
