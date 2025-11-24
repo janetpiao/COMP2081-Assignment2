@@ -43,25 +43,6 @@ main {
 }
 
 /* style author */
-/* .author {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 100px;
-  background-color: #84cbe3;
-  padding: 40px;
-  border-radius: 16px;
-}
-
-.author figure img {
-  border-radius: 16px;
-  width: 100%;
-}
-
-.author article {
-  flex: 1;
-} */
-
 .author {
   position: relative;
   margin-bottom: 100px;
@@ -87,7 +68,47 @@ main {
   border-radius: 16px;
 }
 
-/* ----------- style smaller screens ----------- */
+/* style accordion */
+/* change accordion color reference video: https://www.youtube.com/watch?v=7TMnz-hWy6I
+
+change button icon color:
+https://www.youtube.com/watch?v=nMby0FWGMGk */
+/* style accordion border video: https://www.youtube.com/watch?v=7TMnz-hWy6I */
+
+/* Use a CSS custom property for accordion color and a fallback background-color */
+.accordion {
+  --bs-accordion-active-bg: #1049a5;
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-border-radius: 12px;
+}
+
+.accordion-button.collapsed {
+  border: 1px solid #1049a5;
+  border-radius: 40px;
+}
+
+.accordion-button:hover {
+  background: #4d82d6;
+}
+
+.accordion-button::after {
+  content: "";
+  background-image: url(../img/white_arrow.svg) !important;
+  background-size: 50%;
+  background-position: center;
+  background-color: #1049a5 !important;
+  border-radius: 5px;
+}
+
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+  border: 1px solid #1049a5;
+  box-shadow: 3px 3px 13px #bebec0;
+}
+
+/* style carousel */
+
+/* ----------- style medium screens ----------- */
 @media only screen and (max-width: 992px) {
   main {
     margin: 120px auto;
@@ -137,6 +158,7 @@ main {
   }
 }
 
+/* ----------- style small screens ----------- */
 @media only screen and (max-width: 768px) {
   /* style author */
   .author figure {
